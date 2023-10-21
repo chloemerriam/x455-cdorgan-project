@@ -1,0 +1,37 @@
+.topnav {
+    overflow: hidden;
+    background-color: #0E1C3C;
+    }
+
+    .topnav a {
+    float: left;
+    color: #FFE9BD;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    }
+
+    .topnav a:hover {
+    background-color: #0E1C3C;
+    color: #FFE9BD;
+    }
+
+    .text-logo {
+    background-color: #0E1C3C;
+    color: #FFE9BD;
+    }
+
+    body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color:#0E1C3C
+    }
+
+    h1, html {
+    height: 100%;
+    margin: 0;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color:#0E1C3C
+    }
