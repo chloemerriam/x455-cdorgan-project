@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Webpage</title>
-    </head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Hero Screen - Muffins & Text</title>
+        <style>
+          * {
+            padding: 0;
+            margin: 0;
+          }
+    
+          .hero-image {
+            height: 1%;
+            width: 1%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            vertical-align: bottom; /* remove whitespace below image */
+          }
+    
+          h1 {
+            color: #0E1C3C;
+            font-size: 64px;
+            font-weight: bold;
+          }
+    
+          .container {
+            position: relative;
+            width: 100%;
+          }
+    
+          .hero-text {
+            position: absolute;
+            top: 15%;
+            left: 30%;
+          }
+    
+          .footer-content {
+            width: 100%;
+            padding: 30px 0;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            background-color: #0E1C3C;
+          }
+    
+          .hero-button {
+            position: absolute;
+            bottom: 10%;
+            right: 5%;
+            border-radius: 10px;
+            border: none;
+            background-color: #0E1C3C;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            cursor: pointer;
+          }
+
+        </style>
+      </head>
     <body>
-        <h1>Title</h1>
-        <div>this is a div tag</div>
-        <p>this is a p tag</p>
+        <section>
+            <img src="./assests/images/castlestreet.jpeg" width="100%" height="100%" /> 
+            <div>
+        <h1>The French Liaison</h1>
+            </div>
+        </section>
+        <footer>I'm a footer</footer>
     </body>
 </html>
