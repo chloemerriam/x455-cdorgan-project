@@ -35,3 +35,24 @@
     font-family: Georgia, Times, 'Times New Roman', serif;
     color:#0E1C3C
     }
+
+    h2, html {
+        height: 100%;
+        margin: 0;
+        font-family: Georgia, Times, 'Times New Roman', serif;
+        color:#0E1C3C
+        }
+
+    h3, html {
+        height: 100%;
+        margin: 0;
+        font-family: Georgia, Times, 'Times New Roman', serif;
+        color:#0E1C3C
+        }
+
+     h4, html {
+            height: 100%;
+            margin: 0;
+            font-family: Georgia, Times, 'Times New Roman', serif;
+            color:#0E1C3C
+            }
