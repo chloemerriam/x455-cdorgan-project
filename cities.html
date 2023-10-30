@@ -16,7 +16,14 @@
         color: #0E1C3C;    
       }
 			</style>
-		<title>Nature</title>
+		<title>Cities</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+        <style>
+          div.carousel-area {
+            width: 70%;
+            padding: 0px 40px 0px 40px;
+          }
+        </style>
 	</head>
 	<body>
 		<div class="topnav">
@@ -29,14 +36,53 @@
 		  </div>
 	
 	<body>
+        <div class="carousel-area">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <!-- add more carousel indicators here -->
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+              </ol>
+      
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="./assests/images/cafe.JPG" alt="Cafe" style="width: 100%" />
+                </div>
+                <!-- add more carousel items here -->
+                <div class="item">
+                  <img src="./assests/images/stgermain.JPG" alt="StGermain" style="width: 100%" />
+                </div>
+
+                <div class="item">
+                    <img src="./assests/images/cheese.JPG" alt="cheese" style="width: 100%" />
+                  </div>
+      
+              </div>
+      
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+      
+          <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script type="text/JavaScript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<article>
 	  	<div>
 			
-			<h1 style="padding-top: 50px;"> Paris in a Weekend </h1> <i>by Chloé Dorgan</i> 
-			<p>
+			<h1 style="padding-top: 10px;"> Paris in a Weekend </h1> <i style="padding-left: 10px;"> by Chloé Dorgan</i> 
+			<p style="padding-top: 20px; padding-left:10px;">
                 Last summer, I was finally able to introduce my husband to the country where I was raised. We had a trip to France planned in June 2020 but it had to be canceled, like most people’s travel plans during the pandemic. This trip has been in the works for 9 years, ever since we started dating and I would wistfully talk about fresh bread and cheese from home
 			</p>
-            <p>
+            <p style= padding-left:10px;">
                 I wanted to make sure that my husband got to see a good chunk of the Paris region where I grew up, but also the countryside and the mountains. A missed connection in Dallas meant that we lost a day so we were on an even tighter schedule than before. With this in mind, I present to you the speediest Paris tour that will still give you a good taste of our capital.				
             </p>
 			<h3>Day 1: Classic Vistas & Avenues</h3>

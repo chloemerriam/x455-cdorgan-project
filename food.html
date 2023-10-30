@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="styles.css">
+            <style>
+                    div {
+                        background-color: white;
+                        padding-right: 30px;
+                        padding-left: 80px;
+                        }
+                        .footer {
+                    text-align: center;
+                    top: 120%;
+                    left: 50%;
+                    color: #0E1C3C;    
+                }
+
+            * {
+            box-sizing: border-box;
+            }
+
+            .row > .column {
+            padding: 0 8px;
+            }
+
+            .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+
+            .column {
+            float: left;
+            width: 25%;
+            }
+
+            /* The Modal (background) */
+            .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: black;
+            }
+
+            /* Modal Content */
+            .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            width: 90%;
+            max-width: 1200px;
+            }
+
+            /* The Close Button */
+            .close {
+            color: white;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+            color: #999;
+            text-decoration: none;
+            cursor: pointer;
+            }
+
+            .mySlides {
+            display: none;
+            }
+
+            .cursor {
+            cursor: pointer;
+            }
+
+            /* Next & previous buttons */
+            .prev,
+            .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+            }
+
+            /* Position the "next button" to the right */
+            .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+            }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover,
+            .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            }
+
+            /* Number text (1/3 etc) */
+            .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+            }
+
+            img {
+            margin-bottom: -4px;
+            }
+
+            .caption-container {
+            text-align: center;
+            background-color: black;
+            padding: 2px 16px;
+            color: white;
+            }
+
+            .demo {
+            opacity: 0.6;
+            }
+
+            .active,
+            .demo:hover {
+            opacity: 1;
+            }
+
+            img.hover-shadow {
+            transition: 0.3s;
+            }
+
+            .hover-shadow:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
+			.footer {
+        text-align: center;
+		top: 120%;
+        left: 50%;
+        color: #0E1C3C;    
+      }
+            </style>
+            		<title>Food</title>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="text-logo" href="#TheFrenchLiaison">The French Liaison</a>
+        <a href="#cities" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Cities</a>
+        <a href="#nature" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Nature</a>
+        <a href="#Language"style= "font-family: Verdana, Geneva, Tahoma, sans-serif;" >Language</a>
+        <a href="#Food"style= "font-family: Verdana, Geneva, Tahoma, sans-serif;" >Food</a>
+        <a href="#Culture"style= "font-family: Verdana, Geneva, Tahoma, sans-serif;" >Culture</a>
+      </div>
+
+<div class="row">
+  <div class="column">
+    <img src="./assests/images/melon.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./assests/images/southoffrance.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./assests/images/castlestreet.jpeg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./assests/images/cheese.JPG" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="./assests/images/melon.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="./assests/images/southoffrance.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="./assests/images/castlestreet.jpeg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="./assests/images/cheese.JPG" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="./assests/images/melon.jpg" style="width:100%" onclick="currentSlide(1)" alt="Melon and Prosciutto">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./assests/images/southoffrance.jpg" style="width:100%" onclick="currentSlide(2)" alt="South of France">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./assests/images/castlestreet.jpeg" style="width:100%" onclick="currentSlide(3)" alt="French Medieval Castle">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./assests/images/cheese.JPG" style="width:50%" onclick="currentSlide(4)" alt="Cheese Platter">
+    </div>
+  </div>
+</div>
+
+<div>
+    <h1 style="padding-top: 50px;padding-left:10px">Melon and Prosciutto Salad</h1>
+    <h4 style="padding-top: 10px;padding-left:10px"> Ingredients</h4>
+    <ul>
+        <li>2 packets of sliced Prosciutto</li>
+        <li>1/2 Cantaloupe Melon</li>
+        <li>2 cups mixed spring greens</li>
+        <li>1/4 cup fresh basil leaves</li>
+        <li>3 medium sized balls of Burrata cheese</li>
+        <li>1 tbsp extra virgin olive oil</li>
+        <li>1/2 tsp balsamic vinegar</li>
+        <li>1/2 tsp flaky sea salt</li>
+      </ul>
+    <h4 style="padding-top: 10px;padding-left:10px"> Instructions</h4>
+    <ol type="1">
+        <li>Slice your whole cantaloupe in half and then trim off the skin.</li>
+        <li>Scoop out the seeds with a spoon and cut the cantaloupe into thin slices</li>
+        <li>Arrange the spring greens and melon on a large platter</li>
+        <li>Top the salad with three balls of burrata, each cut in half and laid open.</li>
+        <li>Bunch the prosciutto slices around the outside of the melon.</li>
+        <li>Place fresh basil leaves around the top of the salad.</li>
+        <li>Drizzle with 1 tablespoon olive oil and balsamic vinegar.</li>
+      </ol>
+</div>
+
+<footer class="footer"> ©2023 The French Liaison &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Privacy and Terms &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Subscribe &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Careers</footer>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
