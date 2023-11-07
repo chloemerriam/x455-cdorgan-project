@@ -7,19 +7,20 @@
     float: left;
     color: #FFE9BD;
     text-align: center;
-    padding: 14px 16px;
+    padding: 18px 16px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     }
 
     .topnav a:hover {
-    background-color: #0E1C3C;
-    color: #FFE9BD;
+    background-color: #FFE9BD;
+    color: #0E1C3C;
     }
 
     .text-logo {
     background-color: #0E1C3C;
     color: #FFE9BD;
+    font-size: 20px;
     }
 
     body, html {
